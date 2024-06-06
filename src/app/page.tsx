@@ -1,11 +1,17 @@
 import { Dashboard } from "app/components/Dashboard";
 import { Navbar } from "app/components/Navbar";
+import { Sidebar } from "app/components/Sidebar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-10">
-      <Navbar />
-      <Dashboard />
+    <main className="flex min-h-screen">
+      <section className="hidden lg:block min-w-[15%]">
+        <Sidebar />
+      </section>
+      <section className="flex flex-col items-center w-full lg:max-w-[85%] min-h-full">
+        <Navbar />
+        <Dashboard />
+      </section>
     </main>
   );
 }
