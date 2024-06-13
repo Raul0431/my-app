@@ -6,7 +6,7 @@ import { Sidebar } from "app/components/Sidebar";
 export default function Home() {
   return (
     <>
-      <Invoice />
+      {/*<Invoice />*/}
       <main className="flex min-h-screen">
         <section className="hidden lg:block min-w-[15%]">
           <Sidebar />
